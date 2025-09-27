@@ -1,0 +1,23 @@
+set server_ospauth 0            // Włącza autoryzację OSP (system autentykacji graczy w modzie OSP)
+set sv_hostname "Serwer Quake 3 Arena"   // Nazwa serwera wyświetlana w przeglądarce serwerów
+set sv_allowdownload 1          // Pozwala klientom pobierać brakujące pliki .pk3 z serwera
+set sv_floodprotect 0           // Wyłącza ochronę przed floodem w czacie (0 = brak limitu wiadomości)
+set sv_maxclients 24            // Maksymalna liczba slotów (łącznie gracze + boty), max 64
+set sv_pure 0                   // 0 = serwer akceptuje modyfikowane pk3 u graczy; 1 = wymaga czystych plików (zalecane dla publicznych)
+set sv_fps "144"                // Tickrate serwera, liczba klatek logiki na sekundę (domyślnie 20, tu podniesione do 144 dla płynności)
+set rate "25000"                // Limit przepustowości danych na klienta (25000 = typowe optimum dla Q3)
+set snaps "20"                  // Ile „klatek” na sekundę serwer wysyła do klienta (częstotliwość aktualizacji)
+set cl_maxpackets "125"         // Zalecane ustawienie dla klientów: max pakiety wysyłane na sekundę (serwer tego nie wymusza, to raczej informacja)
+set cl_packetdup "1"            // Klienci wysyłają pakiety z duplikacją (redukuje utratę, ale serwer nie wymusza tego ustawienia)
+set com_maxfps "144"            // Limit FPS klienta (serwer tego nie narzuca, ale czasem daje jako rekomendację)
+set bot_enable 0                // Wyłącza boty całkowicie, oszczędza CPU/RAM na serwerze dedykowanym
+set rconPassword "mypassword"   // Hasło RCON – zdalne administrowanie serwerem
+set ref_password "refpassword"  // Hasło dla „referee” (sędziów). Puste = brak dostępu referee
+set match_instagib 0            // 0 = normalna gra, 1 = tryb instagib (railgun only, one-shot kill)
+set server_availmodes 63        // Bitmask dostępnych trybów gry w OSP (63 = wszystkie tryby do wyboru)
+set g_gametype 0                // Tryb gry: 0 = Free For All, 1 = Tournament, 3 = Team DM, 4 = CTF itd.
+set mode_start 0                // Tryb startowy po uruchomieniu serwera (tu: 0 = Free For All)
+set timelimit 20                // Limit czasu mapy w minutach
+set fraglimit 50                // Limit fragów kończący mapę
+set map_file "cfg-maps/lanwarig.txt"   // Plik tekstowy z listą map do rotacji (jeśli OSP ma go obsłużyć)
+map q3dm17                      // Startowa mapa po uruchomieniu serwera
