@@ -1,9 +1,8 @@
 # Quake 3 Arena in Docker
 
-This repository allows you to run a customizable **Quake 3 Arena** server inside a Docker container and deploy to Dokku.  
-It is based on [wokoman/quake3-osp-server](https://hub.docker.com/r/wokoman/quake3-osp-server).
+This repository allows you to run a customizable **Quake 3 Arena** server inside a Docker container and deploy to Dokku.
 
----
+It is based on [wokoman/quake3-osp-server](https://hub.docker.com/r/wokoman/quake3-osp-server).
 
 ## Features
 
@@ -12,8 +11,6 @@ It is based on [wokoman/quake3-osp-server](https://hub.docker.com/r/wokoman/quak
 - Configuration with `.env` file  
 - Easy customization of Quake 3 Arena server settings (`lanwarig.cfg`)  
 - Based on the **OSP mod** 
-
----
 
 ## Requirements
 
@@ -36,8 +33,6 @@ Place the following files in the `baseq3` directory:
 - Any additional `.pk3` files (optional – custom maps, mods, textures, etc.)
 
 Without `pak0.pk3`, the server will not start.
-
----
 
 ## Deployment (Dokku)
 
