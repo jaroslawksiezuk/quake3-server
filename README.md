@@ -38,6 +38,22 @@ Without `pak0.pk3`, the server will not start.
 
 You can deploy the server with a single command using the provided deploy.sh script.
 
+```bash
 ./deploy.sh
+```
 
 The script uses the values from your .env file to build and deploy the Docker image on Dokku.
+
+## Server Configuration
+
+Server configuration is located in `lanwarig.cfg.example`.
+
+To customize it, copy the example file:
+
+```bash
+cp lanwarig.cfg.example lanwarig.cfg
+```
+
+Edit `lanwarig.cfg` with your preferred settings.
+
+Redeploy or restart the server.
